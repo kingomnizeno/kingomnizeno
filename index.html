@@ -1,145 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>King Omni</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: radial-gradient(circle at top, #f8d749, #e67e22);
-      color: #000;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at center, #0f0f0f, #000000);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+      padding: 0 20px;
     }
-    header {
-      padding: 60px 20px 30px;
-    }
-    header img {
-      width: 200px;
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    }
-    h1 {
-      font-size: 48px;
-      margin: 20px 0 10px;
-    }
-    p.slogan {
-      font-size: 20px;
+
+    .hero h1 {
+      font-size: 60px;
       margin: 0;
+      background: linear-gradient(to right, gold, orange);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    .btn {
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
       margin-top: 20px;
-      display: inline-block;
-      padding: 15px 30px;
-      background: black;
-      color: gold;
-      border-radius: 30px;
+      color: #ccc;
+    }
+
+    .hero .btn {
+      margin-top: 40px;
+      padding: 15px 35px;
+      background: gold;
+      color: black;
+      font-weight: bold;
       font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: transform 0.2s ease;
     }
-    .btn:hover {
-      background: #222;
+
+    .hero .btn:hover {
+      transform: scale(1.05);
     }
-    section {
-      padding: 60px 20px;
-    }
-    h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .tokenomics, .roadmap {
+
+    .section {
+      padding: 80px 20px;
       max-width: 800px;
       margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      color: gold;
+      margin-bottom: 20px;
+    }
+
+    .section ul {
       text-align: left;
-      background: rgba(255,255,255,0.1);
-      padding: 30px;
-      border-radius: 20px;
-      color: #111;
-      background: #fff;
+      list-style: none;
+      padding: 0;
     }
-    footer {
-      padding: 20px;
-      background: black;
-      color: white;
+
+    .section ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
     }
-    a {
-      color: #e67e22;
+
+    .social-icons {
+      position: fixed;
+      bottom: 20px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 25px;
+    }
+
+    .social-icons a {
+      width: 45px;
+      height: 45px;
+      background-color: #1e1e1e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-<img src="king-omni.png" alt="King Omni" class="fade-in" width="300"> 
+  <div class="hero">
     <h1>King Omni</h1>
-    <p class="slogan">The Supreme Meme Ruler of the Blockchain!</p>
-    <a href="#" class="btn">Buy Now</a>
-  </header>
+    <p>The Supreme Meme Ruler of the Blockchain! Join the movement and shape the meme coin revolution.</p>
+    <a class="btn" href="https://tinyurl.com/Kingomni" target="_blank">🚀 Buy Now</a>
+  </div>
 
-  <section>
-    <h2>About King Omni</h2>
-    <p>King Omni is not just a meme, he's a movement. Inspired by ancient power and futuristic technology, King Omni reigns supreme across the crypto kingdom. Join the army of loyal subjects building the next legendary meme coin.</p>
-  </section>
-
-  <section>
+  <div class="section">
     <h2>Roadmap</h2>
-    <div class="roadmap">
-      <ul>
-        <li>✅ Launch Website</li>
-        <li>✅ Community Build-up</li>
-        <li>🔜 Token Launch</li>
-        <li>🔜 Listings on DEXs</li>
-        <li>🔜 Meme War Marketing Campaign</li>
-        <li>🔜 World Domination</li>
-      </ul>
-    </div>
-  </section>
+    <ul>
+      <li>✅ Launch Website</li>
+      <li>✅ Community Build-up</li>
+      <li>🔜 Token Launch</li>
+      <li>🔜 Listings on DEXs</li>
+      <li>🔜 Meme War Marketing Campaign</li>
+      <li>🔜 World Domination</li>
+    </ul>
+  </div>
 
-  <section>
+  <div class="section">
     <h2>Tokenomics</h2>
-    <div class="tokenomics">
-      <ul>
-        <li><strong>Total Supply:</strong> 1,000,000,000 $OMNI</li>
-      </ul>
-    </div>
-  </section>
-<a href="https://tinyurl.com/Kingomni" target="_blank">
-  <button style="padding: 12px 24px; background-color: #FFD700; color: black; border: none; border-radius: 12px; font-weight: bold;">
-    🚀 Visit Official Site
-  </button>
-</a>
-  
-  <footer>
-  <p>© 2025 King Omni. All rights reserved.</p>
-  <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
-    <!-- Twitter (X) -->
-    <a href="https://twitter.com/KingZeno63759" target="_blank" title="Twitter (X)" style="background-color: #000; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; transition: transform 0.3s;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/X_logo_2023.svg" alt="Twitter X" style="width: 28px; height: 28px;">
-    </a>
+    <ul>
+      <li><strong>Total Supply:</strong> 1,000,000,000 $OMNI</li>
+    </ul>
+  </div>
 
-    <!-- Telegram -->
-    <a href="https://t.me/+XsY40vBE3kk3ZTE0" target="_blank" title="Telegram" style="background-color: #0088cc; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; transition: transform 0.3s;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style="width: 28px; height: 28px;">
+  <div class="social-icons">
+    <a href="https://twitter.com/KingZeno63759" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/X_logo_2023.svg" alt="X" />
     </a>
-
-    <!-- Email -->
-    <a href="mailto:kingomnizeno@gmail.com" target="_blank" title="Email" style="background-color: #d44638; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; transition: transform 0.3s;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Email" style="width: 28px; height: 28px;">
+    <a href="https://t.me/+XsY40vBE3kk3ZTE0" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
+    </a>
+    <a href="mailto:kingomnizeno@gmail.com" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Email" />
     </a>
   </div>
 
-  <style>
-    footer a:hover {
-      transform: scale(1.2);
-    }
-  </style>
-  </footer>
-  
-
-</section>  
-
 </body>
 </html>
+
+
+
+
+
+
+
