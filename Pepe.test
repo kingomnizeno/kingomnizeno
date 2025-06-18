@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>King Omni</title>
+  <style>
+    /* Basic reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .headline {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ffc107, #ff6d00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    .subheadline {
+      font-size: 1.25rem;
+      color: #bbb;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      background: #ffc107;
+      color: #000;
+      font-size: 1.125rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: transform .2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Floating circle animation */
+    .float {
+      position: absolute;
+      bottom: 20%;
+      right: 10%;
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle at center, #ffc107 60%, transparent 60%);
+      border-radius: 50%;
+      animation: floatme 6s ease-in-out infinite;
+    }
+    @keyframes floatme {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1 class="headline">King Omni</h1>
+    <p class="subheadline">The Supreme Meme Ruler of the Blockchain</p>
+    <a href="https://tinyurl.com/Kingomni" target="_blank" class="btn">🚀 Enter App</a>
+  </div>
+  <div class="float"></div>
+</body>
+</html>
