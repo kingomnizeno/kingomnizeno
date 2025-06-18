@@ -2,111 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>King Omni</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at center, #0f0f0f, #000000);
-      color: white;
-      overflow-x: hidden;
-    }
-
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
       text-align: center;
-      padding: 0 20px;
     }
-
+    .hero {
+      padding: 100px 20px 60px;
+    }
     .hero h1 {
-      font-size: 60px;
-      margin: 0;
-      background: linear-gradient(to right, gold, orange);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 48px;
+      color: #fbbc04;
+      margin-bottom: 20px;
     }
-
     .hero p {
       font-size: 20px;
       max-width: 600px;
-      margin-top: 20px;
+      margin: auto;
       color: #ccc;
     }
-
-    .hero .btn {
-      margin-top: 40px;
-      padding: 15px 35px;
-      background: gold;
+    .buy-button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #fbbc04;
       color: black;
-      font-weight: bold;
       font-size: 18px;
+      font-weight: bold;
       border: none;
       border-radius: 30px;
       cursor: pointer;
       text-decoration: none;
-      transition: transform 0.2s ease;
+      display: inline-block;
     }
-
-    .hero .btn:hover {
-      transform: scale(1.05);
+    .buy-button:hover {
+      background-color: #e6a800;
     }
-
-    .section {
-      padding: 80px 20px;
+    .social-icons {
+      margin-top: 40px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+    }
+    section {
+      padding: 60px 20px;
       max-width: 800px;
       margin: auto;
-      text-align: center;
+      text-align: left;
     }
-
-    .section h2 {
+    section h2 {
       font-size: 32px;
-      color: gold;
+      color: #fbbc04;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      line-height: 2;
+      color: #eee;
+    }
+    .team-member {
       margin-bottom: 20px;
     }
-
-    .section ul {
-      text-align: left;
-      list-style: none;
-      padding: 0;
+    .faq-item {
+      margin-bottom: 20px;
     }
-
-    .section ul li {
-      padding: 10px 0;
-      border-bottom: 1px solid #333;
+    footer {
+      background-color: #111;
+      padding: 30px;
+      color: #999;
+      font-size: 14px;
     }
-
-    .social-icons {
-      position: fixed;
-      bottom: 20px;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      gap: 25px;
+    footer a {
+      color: #fbbc04;
+      margin: 0 10px;
+      text-decoration: none;
     }
-
-    .social-icons a {
-      width: 45px;
-      height: 45px;
-      background-color: #1e1e1e;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      transition: transform 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-
-    .social-icons img {
-      width: 24px;
-      height: 24px;
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -115,10 +96,21 @@
   <div class="hero">
     <h1>King Omni</h1>
     <p>The Supreme Meme Ruler of the Blockchain! Join the movement and shape the meme coin revolution.</p>
-    <a class="btn" href="https://tinyurl.com/Kingomni" target="_blank">🚀 Buy Now</a>
+    <a href="https://tinyurl.com/Kingomni" class="buy-button" target="_blank">🚀 Buy Now</a>
+    <div class="social-icons">
+      <a href="https://t.me/KingOmniCommunity" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+      </a>
+      <a href="https://twitter.com/KingZeno63759" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="Twitter">
+      </a>
+      <a href="mailto:kingomnizeno@gmail.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a>
+    </div>
   </div>
 
-  <div class="section">
+  <section>
     <h2>Roadmap</h2>
     <ul>
       <li>✅ Launch Website</li>
@@ -128,33 +120,51 @@
       <li>🔜 Meme War Marketing Campaign</li>
       <li>🔜 World Domination</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Tokenomics</h2>
     <ul>
       <li><strong>Total Supply:</strong> 1,000,000,000 $OMNI</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="social-icons">
-    <a href="https://twitter.com/KingZeno63759" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/X_logo_2023.svg" alt="X" />
-    </a>
-    <a href="https://t.me/+XsY40vBE3kk3ZTE0" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
-    </a>
-    <a href="mailto:kingomnizeno@gmail.com" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Email" />
-    </a>
-  </div>
+  <section>
+    <h2>Team</h2>
+    <div class="team-member">
+      <strong>👑 King Omni</strong> – Founder & Meme Commander
+    </div>
+    <div class="team-member">
+      <strong>🧠 MetaZeno</strong> – Blockchain Strategist
+    </div>
+    <div class="team-member">
+      <strong>🎨 PixelMaster</strong> – Meme & Design Wizard
+    </div>
+  </section>
+
+  <section>
+    <h2>FAQs</h2>
+    <div class="faq-item">
+      <strong>What is King Omni?</strong>
+      <p>A revolutionary meme coin powered by community and humor, aiming to conquer the crypto world.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Where can I buy $OMNI?</strong>
+      <p>You can buy it using the "Buy Now" button above once it’s listed on a DEX.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 King Omni. All rights reserved.
+    <div>
+      <a href="https://t.me/KingOmniCommunity" target="_blank">Telegram</a> |
+      <a href="https://twitter.com/KingZeno63759" target="_blank">Twitter</a> |
+      <a href="mailto:kingomnizeno@gmail.com">Email</a>
+    </div>
+  </footer>
 
 </body>
 </html>
-
-
-
-
 
 
 
