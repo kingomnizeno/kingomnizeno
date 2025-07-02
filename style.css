@@ -1,11 +1,12 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #000;  /* إذا كانت الصورة لا تظهر */
   background-image: 
-    url('https://raw.githubusercontent.com/kingomnizeno/kingomnizeno/main/images/your_image.jpg'), /* الصورة الأولى على الجانبين */
-    url('https://raw.githubusercontent.com/kingomnizeno/kingomnizeno/main/images/your_image.jpg'); /* الصورة الثانية على الجانبين */
-  background-size: auto 100%; /* لضبط الصورة لتغطية ارتفاع الصفحة فقط */
-  background-position: left center, right center; /* لتحديد مكان الصورة على الجانبين */
-  background-repeat: repeat-y; /* لتكرار الصورة على المحور الرأسي */
+    url('https://raw.githubusercontent.com/kingomnizeno/kingomnizeno/main/images/your_image.jpg'), 
+    url('https://raw.githubusercontent.com/kingomnizeno/kingomnizeno/main/images/your_image.jpg'); /* الصورة المكررة */
+  background-size: auto 100%; /* لضبط الصورة في الارتفاع */
+  background-position: left center, right center; /* تحديد مكان الصورة على الجانبين */
+  background-repeat: repeat-y; /* تكرار الصورة على المحور الرأسي */
   color: #f0f0f0;
   margin: 0;
   padding: 0;
