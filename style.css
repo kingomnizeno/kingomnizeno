@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url('https://github.com/kingomnizeno/kingomnizeno/raw/main/image/your_image.jpg'); /* تحديد المسار الصحيح للصورة */
+  background-image: url('https://github.com/kingomnizeno/kingomnizeno/raw/main/images/your_image.jpg'); /* تحديد المسار الصحيح للصورة */
   background-size: cover; /* لتغطية كامل المساحة */
   background-position: center; /* لتوسيط الصورة */
   background-repeat: no-repeat; /* لمنع تكرار الصورة */
