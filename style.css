@@ -1,24 +1,31 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #0c0c0c;
+  background-image: url('https://github.com/kingomnizeno/kingomnizeno/raw/main/images/king-omni.jpg'); /* مسار الصورة في مجلد images */
+  background-size: cover; /* لتغطية كامل المساحة */
+  background-position: center; /* لتوسيط الصورة */
+  background-repeat: no-repeat; /* لمنع تكرار الصورة */
   color: #f0f0f0;
   margin: 0;
   padding: 0;
   text-align: center;
 }
+
 header {
-  background-color: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.8); /* تعديل اللون ليكون أكثر شفافية ليظهر التأثير */
   padding: 2em;
 }
+
 section {
   margin: 2em;
-  background-color: #141414;
+  background-color: rgba(20, 20, 20, 0.8); /* إضافة شفافية هنا أيضًا */
   padding: 1.5em;
   border-radius: 12px;
 }
+
 h1, h2 {
   color: #FFD700;
 }
+
 footer {
   background-color: #1a1a1a;
   padding: 1em;
